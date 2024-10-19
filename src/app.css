@@ -1,6 +1,6 @@
-@import "tailwincss/base";
-@import "tailwincss/components";
-@import "tailwincss/utilities";
+@import "tailwindss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Default card styles */
 .card,
