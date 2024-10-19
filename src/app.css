@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default card styles */
+.card,
+.item-card {
+  transition: background-color 0.3s ease;
+}
+
+/* Active state for card */
+.active-card {
+  background-color: #080c2e;
+  color: white;
+}
+
+/* Ensure text colors change appropriately */
+.active-card h3,
+.active-card p,
+.active-card a {
+  color: white;
+}
+
+/* Add hover effect for better UX */
+
+/* Resetting styles for inactive cards */
+.card:not(.active-card) {
+  background-color: white;
+  color: inherit;
+}
+
+.card:not(.active-card) h3,
+.card:not(.active-card) p,
+.card:not(.active-card) a {
+  color: inherit;
+}
+
+.blur-background {
+  display: none;
+}
+
+.card.active-card .blur-background {
+  display: block;
+}
+
+.active-icon {
+  display: none;
+}
+
+.card.active-card {
+  .active-icon {
+    display: block;
+  }
+  .default-icon {
+    display: none;
+  }
+}
+
+/* Tambahkan gaya transisi jika diinginkan */
+.svg-icon {
+  transition: opacity 0.3s ease;
+}
+
+/* Style for rotating the icon when accordion is open */
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.icon-container {
+  transition: transform 0.3s ease;
+}
